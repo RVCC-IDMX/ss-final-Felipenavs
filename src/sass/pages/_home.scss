@@ -2,8 +2,8 @@
 :root{
     --icon: url(https://res.cloudinary.com/dxiisosc3/image/upload/v1702882764/final%20project/misc-1_rtbti1.svg);
     --text-color: hsl(0, 0%, 0%);
-    --h1-2-3-color: hsl(237, 92%, 62%);
-    --links-color:hsl(0, 92%, 62%);
+    --h1-2-3-color: hsl(237, 86%, 51%);
+    --links-color:hsl(360, 91%, 48%);
     --text-font-size:  clamp(1rem, 2.1vw, 1.7rem);
     --h1-font-size: clamp(2.4rem, 7vw, 5rem);
     --h2-font-size: clamp(1.2rem, 4vw, 3rem);
@@ -82,7 +82,7 @@ h2{
 h1, h3 {
     font-weight: bolder;
     font-size: var(--h2-font-size);
-    color:#444cf7;
+    color:var(--h1-2-3-color);
     font-style:oblique;
     font-family: "Rubik Doodle Shadow";
 }
@@ -196,7 +196,7 @@ section ul {
 
 section ul li{
     transition: all .5s ease-in-out;
-    padding: .8em;
+    padding: clamp(.8em, 2vw, 2em);
     border-image-slice: 351 57 232 74;
     border-image-width: 91px 35px 115px 50px;
     border-image-outset: 0px 0px 0px 0px;
@@ -240,7 +240,6 @@ section ul li{
     grid-template-columns: auto;
     gap: clamp(1em, 2vw, 2em);
 }
-
 
 main footer a {
     margin-inline: auto;
